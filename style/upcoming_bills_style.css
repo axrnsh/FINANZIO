@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #F4F4F4;
+    font-family: 'Montserrat', sans-serif;
+    color: #444444;
+}
+
+.sidebar {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding-top: 20px;
+}
+
+.logo {
+    width: 150px; 
+    height: auto; 
+    margin-top: 10px; 
+    margin-left: 30px
+}
+
+.new {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    border: none;
+    width: 100px;
+    height: 50px;
+    margin: 20px 20px 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    position: relative; 
+}
+
+.new span, .menu span{
+    vertical-align: middle; 
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    margin: 10px 20px 10px 20px;
+    color: #A4A4A4;
+    text-decoration: none;
+    position: relative;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.menu a[href="upcoming_bills.php"] {
+    background-color: #3A78F1;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.menu a[href="logout.php"] {
+    position: absolute;
+    bottom: 20px;
+    color: #C2170C;
+}
+
+.menu a:hover {
+    background-color: #ddd;
+}
+
+.menu a[href="upcoming_bills.php"]:hover {
+    background-color: #1C67F9;
+}
+
+.menu img, .new img {
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.main {
+    margin-left: 240px;
+}
+
+.topbar {
+    margin-top: 20pt;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex; 
+    align-items: center; 
+    width: 40%;
+    background-color: #E8E8E8;
+    border: 0.5px solid rgba(68, 68, 68, 0.2);
+    border-radius: 30px;
+    padding: 8px;
+    margin-left: 20px;
+}
+
+.search-bar input[type="text"] {
+    flex: 1; 
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #444444;
+}
+
+.search-bar img {
+    width: 20px;
+    margin: 0 20px 0 10px;
+    cursor: pointer;
+}
+
+.settings {
+    background-color: #E8E8E8;
+    border: 0.5px solid rgba(68, 68, 68, 0.2);
+    border-radius: 50px;
+    padding: 10px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.settings img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.profile {
+    cursor: pointer;
+    background-color: #E8E8E8; 
+    padding: 5px; 
+    border: 0.5px solid rgba(68, 68, 68, 0.2); 
+    border-radius: 30px; 
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.profile img {
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.profile span {
+    margin-right: 10px;
+}
+
+.profile span a {
+    text-decoration: none;
+}
+
+.welcome h1,
+.welcome h2 {
+    margin: 0;
+}
+
+.welcome h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 5px 20px;
+}
+
+.welcome h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+    color: #A4A4A4;
+}
+
+.upcoming {
+    flex: 1;
+    margin: 0 20px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.upcoming-content {
+    width: calc(100% - 60px);  
+    min-height: 50px;  
+    background-color: white;
+    border: 0.5px solid rgba(68, 68, 68, 0.2);
+    border-radius: 20px;
+    padding: 30px; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.upcoming-content h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.upcoming-content h2:first-of-type {
+    margin-top: 0;
+}
+
+.upcoming-content div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.upcoming-content div p {
+    width: 25%;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.upcoming-content div p:nth-child(1) {
+    margin-left: 10px;
+}
+
+.upcoming-content div p:nth-child(2) {
+    text-align: center;
+    color: #A4A4A4;
+}
+
+.upcoming-content div p:nth-child(3) {
+    text-align: center;
+}
+
+.upcoming-content div p:nth-child(4) {
+    text-align: right;
+    margin-right: 30px;
+}
+
+.edit,
+.delete {
+    cursor: pointer;
+    padding: 10px; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    border: none; 
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.edit {
+    background-color: #D9D9D9;
+    margin-right: 10px;
+}
+
+.delete {
+    background-color: #F7E5E3;
+}
+
+.edit:hover {
+    background-color: #B5B5B5; 
+}
+
+.delete:hover {
+    background-color: #FEC7C1; 
+}
+
+.edit img,
+.delete img {
+    width: 20px;
+    border-radius: 50%;
+}
+
+.upcoming-content .upcoming-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+.paid {
+    flex: 1;
+    margin: 0 20px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.paid h1 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.paid-content {
+    width: calc(100% - 60px);  
+    min-height: 50px;  
+    background-color: white;
+    border: 0.5px solid rgba(68, 68, 68, 0.2);
+    border-radius: 20px;
+    padding: 30px; 
+    margin-bottom: 20px;
+}
+
+.paid-content h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.paid-content h2:first-of-type {
+    margin-top: 0;
+}
+
+.paid-content div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.paid-content div p {
+    width: 25%;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.paid-content div p:nth-child(1) {
+    margin-left: 10px;
+}
+
+.paid-content div p:nth-child(2) {
+    text-align: center;
+    color: #A4A4A4;
+}
+
+.paid-content div p:nth-child(3) {
+    text-align: center;
+}
+
+.paid-content div p:nth-child(4) {
+    text-align: right;
+    margin-right: 30px;
+}
+
+.edit,
+.delete {
+    cursor: pointer;
+    padding: 10px; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    border: none; 
+}
+
+.edit {
+    background-color: #D9D9D9;
+    margin-right: 10px;
+}
+
+.delete {
+    background-color: #F7E5E3;
+}
+
+.edit:hover {
+    background-color: #B5B5B5; 
+}
+
+.delete:hover {
+    background-color: #FEC7C1; 
+}
+
+.edit img,
+.delete img {
+    width: 20px;
+    border-radius: 50%;
+}
+
+.paid-content .paid-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+}
